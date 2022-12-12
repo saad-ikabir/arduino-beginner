@@ -1,0 +1,17 @@
+int ledPin = 11;      // pin-11 is defined and value(pin) is set
+int potpin = A0;     //analog a0 is defined an value(pin) is set
+
+void setup() {
+  // put your setup code here, to run once:
+  
+pinMode(ledPin, OUTPUT);      //pin-11 assigned for output
+                             // analog pin won't have to define as input as it is pre-defined as input
+}
+
+void  loop()
+{
+  int reading = analogRead(potpin);   //reading the voltage output by ptentiometer
+  int bright = reading/4;            // dividing the reading by 4 to bring in range of 255
+  delay(500);                        // delay not necessary
+  analogWrite(ledPin,bright);        // outputting the read value on pin 9
+}
