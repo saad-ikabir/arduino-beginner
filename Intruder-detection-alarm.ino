@@ -1,3 +1,7 @@
+//This is a code of a arduino project
+//Here is an Intruder-detection/anti-theft alarm which is made using sonar sensor,led,buzzer.
+//Problem: The buzzer doesn't turn off automatically even after the object is removed.(Though the led turns of as soon as the object is removed).
+
 #define trigPin 12
 #define echoPin 13
 
